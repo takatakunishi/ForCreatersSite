@@ -1,0 +1,31 @@
+.HomeTemplate{
+  background: aquamarine;
+  display: grid;
+  grid-template-rows: 100px 900px 100px;
+  grid-auto-columns: 20% 60% 20%;
+}
+
+.Header {
+  grid-row: 1;
+  grid-column: 1/4;
+}
+
+.UserProfile{
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.Menue{
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.WorksDisplay{
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.Footer {
+  grid-row: 3;
+  grid-column: 1/4;
+}
