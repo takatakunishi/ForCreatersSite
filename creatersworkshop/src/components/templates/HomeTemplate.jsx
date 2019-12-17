@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/templates/HomeTemplate.scss'
+import '../../styles/templates/HomeTemplate.css'
 import Header from '../organisms/Header'
 import Footer from '../organisms/Footer'
 import UserProfile from '../organisms/UserProfile'
