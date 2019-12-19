@@ -1,11 +1,18 @@
 import React from 'react';
 import '../../styles/organisms/Menue.css'
+import GoPostWorksTab from '../molecules/GoPostWorksTab'
+import UserPostedWorksTab from '../molecules/UserPostedWorksTab'
+import StartLiveTab from '../molecules/StartLiveTab'
 
 const Menue = () =>{
 
   return (
     <div className = "Menue">
-      Menu
+      <div className = "M-container">
+        <GoPostWorksTab />
+        <UserPostedWorksTab />
+        <StartLiveTab />
+      </div>
     </div>
   )
 }
