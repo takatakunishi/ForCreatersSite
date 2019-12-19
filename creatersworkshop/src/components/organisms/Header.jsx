@@ -1,13 +1,12 @@
 import React from 'react';
 import '../../styles/organisms/Header.css'
+import { Link, RouteComponentProps } from 'react-router-dom';
 
 const Header = () => {
   return (
     <div className = "Header">
       <div className = "site-title-container">
-        <div className = "site-title">
-          Creaters Workshop
-        </div>
+        <Link to="/" className = "site-title">Creaters Workshop</Link>
       </div>
     </div>
   )

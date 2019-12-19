@@ -1,3 +1,17 @@
 .UserProfile{
   background: gray;
 }
+
+.UPcontainer {
+  height: 80vh;
+  background: black;
+  padding: 5% ;
+}
+
+.UPcontainer .UserBaseInfoTab,.UPcontainer .FollowInfoTab, .UPcontainer .UserPostedWorksTab{
+  height: 60px;
+}
+
+.UPcontainer .LikeWorksTab, .UPcontainer .MessageTab{
+  height: 40px;
+}
