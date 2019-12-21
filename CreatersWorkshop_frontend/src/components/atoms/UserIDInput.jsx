@@ -1,11 +1,10 @@
 import React from 'react';
-import '../../styles/templates/UserIDInput.css';
-import UserIDInput from '../organisms/UserIDInput'
+import '../../styles/atoms/UserIDInput.css';
 
 const UserIDInput = () => {
   return (
     <div className="UserIDInput">
-      UserIDInput
+      <input placeholder="userIdを入力してください" />
     </div>
   );
 }

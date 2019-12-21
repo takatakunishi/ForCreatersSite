@@ -1,3 +1,7 @@
 .LoginFunction{
-  background: palegoldenrod;
+  background: deepskyblue;
+}
+
+.LoginFunction .UserIDInput{
+  margin-top: 15%;
 }
