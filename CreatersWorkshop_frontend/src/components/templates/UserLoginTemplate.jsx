@@ -5,8 +5,9 @@ import UserLoginForm from '../organisms/UserLoginForm'
 const UserLoginTemplate = () => {
   return (
     <div className="UserLoginTemplate">
-      UserLoginTemplate
-      <UserLoginForm />
+      <div className = "ULT-container">
+        <UserLoginForm />
+      </div>
     </div>
   );
 }
