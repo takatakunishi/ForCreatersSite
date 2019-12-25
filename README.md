@@ -3,3 +3,6 @@
 
 ## インストールが必要なもの
 - react 
+- redux
+- react-redux
+- react-router-dom
