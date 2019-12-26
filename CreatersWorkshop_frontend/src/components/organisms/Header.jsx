@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/organisms/Header.css'
-import { Link, RouteComponentProps } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (

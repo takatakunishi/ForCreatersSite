@@ -1,6 +1,5 @@
 import React, { useState} from 'react'
 import '../../styles/molecules/RegistrationFunction.css'
-import UserPassInput from '../atoms/UserPassInput'
 
 const RegistrationFunction = () => {
   const [userId, setUserId] = useState('');
@@ -8,8 +7,6 @@ const RegistrationFunction = () => {
   const [password2, setPassword2] = useState('');
   const [email, setEmail] = useState('');
   const onClickLoginButton = () => {
-    const id = document.getElementById("UID_text");
-    const pass = document.getElementById("UPI_text");
     if(password !== password2){
       alert("同じパスワードが入力されていません");
     }else if (password !== '' && password2 !== '' && userId !== '' && email !== ''){
