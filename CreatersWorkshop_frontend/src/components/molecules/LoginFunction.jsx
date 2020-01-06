@@ -1,18 +1,24 @@
-import React, { useState} from 'react'
+import React from 'react'
 import '../../styles/molecules/LoginFunction.css'
 import UserIDInput from '../atoms/UserIDInput'
 import UserPassInput from '../atoms/UserPassInput'
 import ForgetUserID from '../atoms/ForgetUserID'
+import {loginRequest} from '../../actions/LoginUser/ActionCreater'
+import { useDispatch } from 'react-redux'
 
 const LoginFunction = () => {
-  const [userId, setUserId] = useState('');
-  const [password, setPassword] = useState('');
+  const dispatch = useDispatch();
   const onClickLoginButton = () => {
     const id = document.getElementById("UID_text");
     const pass = document.getElementById("UPI_text");
     if (pass.value !== '' && id.value !== ''){
-      console.log(pass.value);
+      const data = {
+        userId: id.value,
+        token: pass.value
+      }
+      dispatch(loginRequest(data));
       console.log(id.value);
+      console.log(pass.value);
       pass.value = '';
       id.value = '';
     }else{
@@ -22,8 +28,8 @@ const LoginFunction = () => {
   return (
     <div className = "LoginFunction">
       LoginFunction
-      <UserIDInput userId={userId}/>
-      <UserPassInput password={password}/>
+      <UserIDInput />
+      <UserPassInput />
       <button className = "btn-flat-border" onClick={onClickLoginButton}>Log in</button>
       <ForgetUserID />
     </div>
