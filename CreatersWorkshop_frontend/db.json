@@ -1,6 +1,12 @@
 {
   "users": {
-    "userId": "fsdfasdf",
-    "token": "sdfasdfasdf"
+    "userId": "test",
+    "token": "test"
+  },
+  "userInfo": {
+    "userId": "userid",
+    "userName": "username",
+    "password": "pass",
+    "eMail": "emails"
   }
 }
